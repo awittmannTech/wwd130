@@ -1,0 +1,21 @@
+.blueText {
+    color: blue;
+}
+
+p {
+    margin: 0;
+}
+
+#wednesdayText {
+    font-size: 300%;
+    color: purple;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: aliceblue;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
