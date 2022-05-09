@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(252,166,201);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.white {
+    color: white;
+}
+
+.coolFont {
+    font-family: Arial, sans-serif;
+}
+
+.smallFont {
+    font-size: 90%;
+}
+
+.container {
+    max-width: 450px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container ol {
+    text-align: left;
+    font-weight: bold;
+    line-height: 200%;
+    padding-left: 32px;
+}
+
+.container h1:hover {
+    color: black;
+}
+
+.container .largeQuote {
+    display: block;
+    margin: 0 auto;
+    font-size: 190%;
+    max-width: 250px;
+    color: white;
+}
