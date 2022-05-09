@@ -2,7 +2,7 @@ body {
     background-color: rgb(252,166,201);
 }
 
-.bold {
+.bold, footer {
     font-weight: bold;
 }
 
@@ -10,7 +10,7 @@ body {
     color: white;
 }
 
-.coolFont {
+.coolFont, footer {
     font-family: Arial, sans-serif;
 }
 
@@ -28,11 +28,15 @@ body {
     text-align: left;
     font-weight: bold;
     line-height: 200%;
-    padding-left: 32px;
+    padding-inline-start: 32px;
 }
 
 .container h1:hover {
     color: black;
+}
+
+.container img {
+    width: 200px;
 }
 
 .container .largeQuote {
@@ -41,4 +45,8 @@ body {
     font-size: 190%;
     max-width: 250px;
     color: white;
+}
+
+footer p {
+    margin: 30px;
 }
