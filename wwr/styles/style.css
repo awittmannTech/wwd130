@@ -10,6 +10,10 @@ header {
     background-color: #212529;
 }
 
+a {
+    text-decoration: none;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -27,7 +31,6 @@ nav a, #hero-msg h1, #hero-msg h4, .button-box, main, section {
 nav a {
     text-align: center;
     color: white;
-    text-decoration: none;
 }
 
 /* Navigation */
