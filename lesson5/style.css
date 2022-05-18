@@ -3,12 +3,14 @@
 html, body {
     height: 100%;
     margin: 0;
+    background-color: rgb(14,14,14);
+    overflow: hidden;
 }
 
 /* Hero Styling */
 
 .container {
-    width: 80%;
+    width: 68.5%;
     height: 100%;
     margin: 0 auto;
     background-color: #737373;
@@ -19,11 +21,14 @@ html, body {
 }
 
 .circles-container {
-
+    display: block;
+    text-align: center;
+    padding: 1em;
 }
 
 .circles-container img {
-    width: 250px;
+    margin: 1.5em 2.8em;
+    width: 224px;
     border-radius: 50%;
-    border: 10px solid #444444;
+    border: 14px solid #444444;
 }
