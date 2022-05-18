@@ -1,0 +1,29 @@
+/* General Styings */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Hero Styling */
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #737373;
+}
+
+.container img {
+    width: 100%;
+}
+
+.circles-container {
+
+}
+
+.circles-container img {
+    width: 250px;
+    border-radius: 50%;
+    border: 10px solid #444444;
+}
