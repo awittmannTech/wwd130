@@ -2,12 +2,31 @@
 
 /* Background / Main */
 
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Nixie+One&family=Quicksand&display=swap');
+
+
+:root {
+    /* Colors */
+    --primary-color: #212529;
+    --secondary-color: #343a40;
+    --accent1-color: #3C91E6;
+    --accent2-color: #f8f9fa;
+
+    /* Fonts */
+    --heading-font: "Nixie One", Helvetica, sans-serif;
+    --paragraph-font: Quicksand, Helvetica, sans-serif;
+}
+
 body {
-    background-color: #212529;
+    background-color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #212529;
+    background-color: var(--primary-color);
 }
 
 a {
@@ -21,7 +40,11 @@ a {
 
 #background {
     height: 725px;
-    background-color: #343a40;
+    background-color: var(--secondary-color);
+}
+
+main section img {
+    box-sizing: border-box;
 }
 
 nav a, #hero-msg h1, #hero-msg h4, .button-box, main, section {
@@ -30,23 +53,30 @@ nav a, #hero-msg h1, #hero-msg h4, .button-box, main, section {
 
 nav a {
     text-align: center;
-    color: white;
+    color: var(--accent2-color);
+    padding: 35px;
 }
 
 /* Navigation */
 
 nav a:hover {
-    background-color: #3c91e6;
-    color: white;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
 }
 nav a {
-    color: white;
+    color: var(--accent2-color);
 }
 
 /* Text Styling */
 
 h4 {
-    color: white;
+    color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    margin: 0;
 }
 
 /* Misc Styling */
@@ -56,50 +86,78 @@ h4 {
 }
 
 .home-title {
-    color: white;
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 .book, .join {
-    background-color: #3c91e6;
+    background-color: var(--accent1-color);
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
-    background-color: white;
+    background-color: var(--accent2-color);
 }
 .book, .join {
-    color: white;
+    color: var(--accent2-color);
 }
 .book:hover, .join:hover {
-    color: #3c91e6;
+    color: var(--accent1-color);
 }
 
 .msg {
-    background-color: #343a40;
+    background-color: var(--secondary-color);
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
-    color: white;
+    color: var(--accent2-color);
 }
 .msg p {
-    color: white;
+    color: var(--accent2-color);
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid black;
 }
 
 /* Footer Styling */
 
 footer {
-    background-color: #343a40;
+    background-color: var(--secondary-color);
+    padding: 25px 50px;
 }
 footer h3 {
-    color: white;
+    color: var(--accent2-color);
 }
 footer a {
-    color: white;
+    color: var(--accent2-color);
 }
 footer a:hover {
-    color: #3c91e6;
+    color: var(--accent1-color);
 }
 footer h3 a:hover {
     text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
 }
