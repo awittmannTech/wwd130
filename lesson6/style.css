@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+}
+
+.image {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #B9B8B9;
+}
+.text h1 {
+    font-size: 100px;
+    color: rgb(156,14,17);
+    margin-bottom: 100px;
+    letter-spacing: 10px;
+}
+
+.overlayText {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    font-size: 13vw;
+    margin-top: 25vh;
+}
