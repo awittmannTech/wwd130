@@ -131,7 +131,7 @@ h2 {
   margin: 0;
 }
 
-.faq > h4 {
+.faq > h5 {
   color: var(--accent2-color);
   margin: 0;
 }
@@ -176,6 +176,10 @@ h2 {
   padding-top: 5px;
   justify-self: center;
   align-self: center;
+}
+
+.logo {
+  width: 150px;
 }
 
 .home-grid {
