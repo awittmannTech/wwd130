@@ -7,6 +7,7 @@
     <title>Whitney - Contact Us</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/contactform.css">
   </head>
   <body>
     <header>
@@ -19,6 +20,37 @@
 
     <main>
       <h2>Contact Us</h2>
+      <form class="container">
+        <form action="action_page.php">
+          <label for="lname">Company Name:</label>
+          <input
+            type="text"
+            id="company"
+            name="company"
+            placeholder="Your company name.."
+            required=true
+          />
+
+          <label for="lname">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email.."
+            required=true
+          />
+
+          <label for="subject">Leave a note:</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </form>
     </main>
 
     <footer>
