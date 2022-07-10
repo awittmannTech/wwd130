@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+  --primary: #14213d;
+  --secondary: #81717a;
+  --accent1: #fefcfd;
+  --accent2: #29aae1;
+
+  --heading-font: 'Roboto Condensed';
+  --paragraph-font: Montserrat, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* Home Page */
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  background-color: var(--secondary);
+}
+
+/* About Us Page */
+
+.aboutus-container {
+  display: grid;
+  padding: 15px;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+
+  font-family: var(--paragraph-font);
+}
+
+.aboutus-container .text {
+  max-width: 600px;
+}
+.aboutus-container img {
+  max-width: 600px;
+}
+
+.aboutus-container h1 {
+  color: var(--accent2);
+  font-family: var(--heading-font);
+}
+
+/* Pricing Page */
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+}
+
+.pricing-container .plan {
+  width: 400px;
+  height: 700px;
+  background-color: var(--secondary);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  font-family: var(--paragraph-font);
+}
+
+/* Plan Header */
+.pricing-container .plan h3 {
+  font-size: 1.5em;
+  margin: 10px auto auto 0;
+}
+
+/* Plan Price */
+.pricing-container .plan h2 {
+  font-family: var(--heading-font);
+  font-size: 4em;
+  margin: 0;
+  color: var(--accent2);
+}
+
+.pricing-container .plan p {
+  height: 25%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.pricing-container .plan img {
+  object-fit: cover;
+  border: none;
+  height: 50%;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+  .pricing-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
